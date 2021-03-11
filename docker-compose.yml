@@ -9,13 +9,6 @@ services:
       - ./data/uploads:/app/public/uploads
       - ./data/backups:/app/backups
     environment:
-      - APOS_MONGODB_URI=mongodb://mongo:27017/db
+      - APOS_MONGODB_URI=mongodb+srv://admin:dope@cluster0.axqsx.mongodb.net/db
     depends_on:
       - mongo
-  mongo:
-    image: mongo:4.4
-    restart: always
-    volumes:
-      - ./data/db:/data/db
-    expose:
-      - "27017"
