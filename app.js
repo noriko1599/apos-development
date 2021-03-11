@@ -35,7 +35,7 @@ const apos = require('apostrophe')({
     },
 
     'apostrophe-db': {
-      uri: 'mongodb://mongo:27017/db',
+      uri: 'mongodb://localhost:27017/db',
       // There is legacy support for host, port, name, user and password options,
       // but this is not necessary. They can all go in the uri option like this:
       // mongodb://user:password@host:port/dbname
