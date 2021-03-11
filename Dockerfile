@@ -16,7 +16,6 @@ RUN m 3.6
 RUN m tools stable
 RUN npm install -g pm2
 COPY . ./
-RUN chmod 777 ./scripts/docker-build-assets-with-temporary-mongod
 RUN ./scripts/docker-build-assets-with-temporary-mongod
 RUN m rm 3.6
 EXPOSE 3000
