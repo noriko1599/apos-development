@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start:pm2": "pm2 -i 2 start app.js",
+    "log": "pm2 logs",
     "start": "node app.js",
     "build": "node app apostrophe:generation",
     "docker-backup-content": "docker-compose exec apostrophe ./scripts/docker-backup-content",
