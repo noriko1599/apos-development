@@ -10,5 +10,3 @@ services:
       - ./data/backups:/app/backups
     environment:
       - APOS_MONGODB_URI=mongodb+srv://admin:dope@cluster0.axqsx.mongodb.net/db
-    depends_on:
-      - mongo
