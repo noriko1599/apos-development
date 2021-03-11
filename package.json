@@ -4,11 +4,7 @@
   "description": "Minimal Apostrophe Boilerplate",
   "main": "app.js",
   "scripts": {
-    "start:pm2": "pm2 start app.js",
-    "log": "pm2 logs",
-    "shutdown": "pm2 delete all",
-    "start": "npm run start:pm2",
-    "prestart": "npm run build",
+    "start": "node app.js",
     "build": "node app apostrophe:generation",
     "docker-backup-content": "docker-compose exec apostrophe ./scripts/docker-backup-content",
     "docker-restore-content": "docker-compose exec apostrophe ./scripts/docker-restore-content"
