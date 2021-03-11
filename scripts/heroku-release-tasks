@@ -1,0 +1,4 @@
+#!/bin/bash
+
+node app apostrophe:generation || exit 1
+node app apostrophe-migrations:migrate || exit 1

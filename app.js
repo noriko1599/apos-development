@@ -24,16 +24,21 @@ const apos = require('apostrophe')({
 
     // If a template is not found somewhere else, serve it from the top-level
     // `views/` folder of the project
-    'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
+    'apostrophe-templates': {
+      viewsFolderFallback: path.join(__dirname, 'views'),
+      lean: true
+    },
 
     // Add an alt field to images schema, by default the title is used but
     // we recommend enabling the alt field for clarity.
     'apostrophe-images': {
-      enableAltField: true
+      enableAltField: true,
+      lean: true
     },
 
     'apostrophe-db': {
-      uri: 'mongodb+srv://admin:dope@cluster0.axqsx.mongodb.net/apostrophe-sandbox'
+      uri: 'mongodb+srv://admin:dope@cluster0.axqsx.mongodb.net/apostrophe-sandbox',
+      lean: true
       // There is legacy support for host, port, name, user and password options,
       // but this is not necessary. They can all go in the uri option like this:
       // mongodb://user:password@host:port/dbname
