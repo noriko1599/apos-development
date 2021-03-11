@@ -1,5 +1,4 @@
 FROM node:14
-ENV APOS_MINIFY=1
 ENV NODE_ENV=production
 WORKDIR /app
 COPY package* ./
