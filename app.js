@@ -40,5 +40,9 @@ const apos = require('apostrophe')({
       // but this is not necessary. They can all go in the uri option like this:
       // mongodb://user:password@host:port/dbname
     },
+
+    'apostrophe-assets': {
+      minify: true
+    }
   }
 });
